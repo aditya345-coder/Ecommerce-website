@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: ecommerce-backend
+
+server:
+  port: 8080
+
+# JWT Configuration
+jwt:
+  secret: mySecretKey123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+  expiration: 86400000 # 24 hours in milliseconds
+
+# Logging Configuration
+logging:
+  level:
+    com.ecommerce.shop: DEBUG
+    org.springframework.security: DEBUG
